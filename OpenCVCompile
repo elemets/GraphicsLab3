@@ -1,0 +1,5 @@
+#!/bin/bash
+#Run this in terminal
+#+ Command to compile c++ program. here i used common one
+g++ ${1?Error: No File To Compile} -o ${2?Error: No File to Compile to given} `pkg-config --cflags --libs opencv`
+exit 0
